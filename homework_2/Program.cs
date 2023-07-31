@@ -47,7 +47,7 @@ else Console.Write($"the third digit in the number {number} is {res}");
 // обозначающую день недели, и проверяет, является ли этот день выходным.
 
 /*
-bool Findweekend(int num)
+bool FindWeekend(int num)
 {
     return (num == 6 || num == 7);
 }
@@ -61,7 +61,7 @@ int dayNumber = Convert.ToInt32(Console.ReadLine());
 
 if (FromOneToSeven(dayNumber))
 {
-    if (Findweekend(dayNumber)) Console.Write($"{dayNumber} this is a weekend");
+    if (FindWeekend(dayNumber)) Console.Write($"{dayNumber} this is a weekend");
     else Console.Write($"{dayNumber} this is a working day");
 }
 else Console.Write($"The entered number ({dayNumber}) is not the number of the day of the week");
