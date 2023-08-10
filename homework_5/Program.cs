@@ -87,7 +87,7 @@ Console.WriteLine(SumOfOdd(myArray)); */
 //Задайте массив вещественных чисел. 
 //Найдите разницу между максимальным и минимальным элементов массива.
 
-/* double[] FillInArray(int size)
+double[] FillInArray(int size)
 {
     double[] array = new double[size];
 
@@ -119,7 +119,7 @@ double DifferenceMaxMin(double[] array)
     {
         if (min > array[i])
             min = array[i];
-        if (max < array[i])
+        else if (max < array[i])
             max = array[i];
     }
 
@@ -134,4 +134,4 @@ int length = Convert.ToInt32(Console.ReadLine());
 double[] myArray = FillInArray(length);
 WriteArray(myArray);
 
-Console.WriteLine(DifferenceMaxMin(myArray)); */
+Console.WriteLine(Math.Round(DifferenceMaxMin(myArray), 2));
